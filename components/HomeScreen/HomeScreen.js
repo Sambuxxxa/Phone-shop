@@ -27,24 +27,6 @@ export default function HomeScreen() {
 
       </View>
 
-      {/*<TouchableOpacity*/}
-      {/*  style={styles.mainButsBox}*/}
-      {/*  onPress={() => setIsVisibleModal(!isVisibleModal)}*/}
-      {/*>*/}
-      {/*  <Text>*/}
-      {/*    Open modal*/}
-      {/*  </Text>*/}
-      {/*</TouchableOpacity>*/}
-
-      {/*<Modal*/}
-      {/*  visible={isVisibleModal}*/}
-      {/*  animationType={'slide'}*/}
-      {/*>*/}
-      {/*  <TouchableOpacity onPress={() => setIsVisibleModal(!isVisibleModal)}>*/}
-      {/*    <Text>close modal</Text>*/}
-      {/*  </TouchableOpacity>*/}
-      {/*</Modal>*/}
-
       <StatusBar />
     </SafeAreaView>
   );
