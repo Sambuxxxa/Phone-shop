@@ -1,5 +1,4 @@
-import {Text, View, StyleSheet, TextInput} from "react-native";
-import {EvilIcons, Ionicons, MaterialCommunityIcons} from "@expo/vector-icons";
+import {Text, View, StyleSheet} from "react-native";
 
 export default function Header() {
   return (

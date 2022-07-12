@@ -6,10 +6,8 @@ import {
   Text,
   TouchableOpacity,
   SafeAreaView,
-  ActivityIndicator,
-  Button, Modal
 } from "react-native";
-import React, {useContext, useMemo, useState} from "react";
+import React, {useContext, useState} from "react";
 import {ProductsContext} from "../../App";
 import Header from "./Header";
 import {AntDesign, MaterialIcons} from "@expo/vector-icons";

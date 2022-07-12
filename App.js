@@ -1,11 +1,11 @@
-import React, {createContext, useCallback, useEffect, useState} from "react";
+import React, { useState } from "react";
 import {Text, View, StyleSheet, TouchableOpacity, Modal, ScrollView, Image, SafeAreaView} from "react-native";
 import HomeScreen from "./components/HomeScreen/HomeScreen";
 import CartScreen from "./components/CartScreen/CartScreen";
 import AppLoading from 'expo-app-loading';
 import * as Font from 'expo-font';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {MaterialCommunityIcons, AntDesign, EvilIcons, Feather, Octicons} from "@expo/vector-icons";
+import {MaterialCommunityIcons, AntDesign, Feather, Octicons} from "@expo/vector-icons";
 import {NavigationContainer} from "@react-navigation/native";
 import uuid from 'react-native-uuid';
 import {DESCRIPTIONS} from "./data/DESCRIPTIONS";
@@ -155,21 +155,6 @@ export default function App() {
   const [searchedItems, setSearchedItems] = useState(list);
 
 
-  const search = ({text}) => {
-    searchResult(text.toLowerCase())
-    console.log(searchResult)
-    if (searchResult === '') {
-      setSearchedItems(list)
-    } else {
-      setSearchedItems(list.filter(item => {
-          return (
-            item.title.toLowerCase().includes(searchResult)
-          )
-        })
-      )
-    }
-  }
-
   const [fullPrice, setFullPrice] = useState(0);
 
   const [cartList, setCartList] = useState([]);
@@ -193,7 +178,6 @@ export default function App() {
     setCartList,
     fullPrice,
     setFullPrice,
-    search,
     searchedItems,
     isVisibleModal,
     setIsVisibleModal,

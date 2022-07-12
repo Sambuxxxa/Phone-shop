@@ -3,9 +3,7 @@ import {
   View,
   StyleSheet,
   Image,
-  TouchableOpacity
 } from "react-native";
-import { MaterialIcons } from '@expo/vector-icons';
 export default function CartItem(el) {
 
 

@@ -1,9 +1,8 @@
 import React, {useContext} from "react";
-import {FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TextInput, View} from "react-native";
+import {FlatList, SafeAreaView, StatusBar, StyleSheet, View} from "react-native";
 import Header from "./Header";
 import ProductItem from "./ProductItem";
 import {ProductsContext} from "../../App";
-import ModalWindow from "./ModalWindow";
 
 export default function HomeScreen() {
 

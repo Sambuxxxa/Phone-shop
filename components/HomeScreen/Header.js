@@ -1,6 +1,6 @@
-import React, {useContext, useEffect} from "react";
-import {Text, View, StyleSheet, TextInput, Button} from "react-native";
-import {EvilIcons, Ionicons, MaterialCommunityIcons} from "@expo/vector-icons";
+import React, {useContext} from "react";
+import { View, StyleSheet, TextInput} from "react-native";
+import {EvilIcons} from "@expo/vector-icons";
 import {ProductsContext} from "../../App";
 
 export default function Header() {
