@@ -171,22 +171,22 @@ export default function App() {
 
   const [selectedItem, setSelectedItem] = useState(list)
 
-  const data = {
-    list,
-    addToCartList,
-    cartList,
-    setCartList,
-    fullPrice,
-    setFullPrice,
-    searchedItems,
-    isVisibleModal,
-    setIsVisibleModal,
-    setSelectedItem,
-    selectedItem,
-    searchResult,
-    setSearchResult,
-    setSearchedItems,
-  }
+  // const data = {
+  //   list,
+  //   addToCartList,
+  //   cartList,
+  //   setCartList,
+  //   fullPrice,
+  //   setFullPrice,
+  //   searchedItems,
+  //   isVisibleModal,
+  //   setIsVisibleModal,
+  //   setSelectedItem,
+  //   selectedItem,
+  //   searchResult,
+  //   setSearchResult,
+  //   setSearchedItems,
+  // }
 
   return isReady ? <NavigationContainer>
       <ProductsContext.Provider value={data}>
